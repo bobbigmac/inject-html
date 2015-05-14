@@ -1,4 +1,5 @@
 # bobbigmac:inject-html
+# IN PROGRESS (DO NOT USE)
 
 #### A way to provide default HTML to the client
 
