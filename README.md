@@ -12,3 +12,7 @@ Forked from [inject-data](https://github.com/meteorhacks/inject-data)
 meteor add bobbigmac:inject-html
 
 See the docs for inject-data (and fast-render)
+
+## TODO
+
+Lots of things, just playing with the idea atm.

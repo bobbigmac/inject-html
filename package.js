@@ -4,8 +4,8 @@ var path = Npm.require('path');
 Package.describe({
   "summary": "A way to provide default HTML to the client",
   "version": "0.1.0",
-  "git": "https://github.com/bobbigmac/inject-data",
-  "name": "bobbigmac:inject-data"
+  "git": "https://github.com/bobbigmac/inject-html",
+  "name": "bobbigmac:inject-html"
 });
 
 Package.onUse(function(api) {
