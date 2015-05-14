@@ -1,35 +1,13 @@
-# meteorhacks:inject-data
+# bobbigmac:inject-html
 
-#### A way to inject data to the client with initial HTML
+#### A way to provide default HTML to the client
 
-This is the package used by [`fast-render`](https://github.com/meteorhacks/fast-render) to push data to the client with the initial HTML.
+This is the package (intended to be) used to render via SSR templates on the meteor server-side to render (at least a subset of) templates relevant to the application, to pre-initialise the client-side with HTML.
+
+Forked from [inject-data](https://github.com/meteorhacks/inject-data)
 
 ## Installation
 
-meteor add meteorhacks:fast-render
+meteor add bobbigmac:inject-html
 
-## Push Data
-
-We need to use this package with a server side router. We've extended nodejs `http.OutgoingMessage` and provides an API like this.
-
-Here is an example with [picker](https://github.com/meteorhacks/picker).
-
-```js
-Picker.route("/", function(params, req, res, next) {
-  var ejsonData = {aa: 10};
-  res.pushData("some-key", ejsonData);
-  // make sure to move the routing forward.
-  next();
-});
-```
-
-## Get Data
-
-You can get data with the following API from the **client**.
-
-```js
-InjectData.getData("some-key", function(data) {
-  console.log(data);
-});
-```
-
+See the docs for inject-data (and fast-render)
