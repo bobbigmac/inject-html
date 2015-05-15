@@ -10,8 +10,8 @@ Package.describe({
 
 Package.onUse(function(api) {
   configure(api);
-  api.use("meteorhacks:ssr@2.0.0");
-  api.export('InjectData', ['client', 'server']);
+  //TODO: This needs to be used in html-render: api.use("meteorhacks:ssr@2.0.0");
+  api.export('InjectHtml', ['client', 'server']);
 });
 
 Package.onTest(function(api) {
@@ -37,7 +37,7 @@ Package.onTest(function(api) {
 function configure (api) {
   api.versionsFrom('METEOR@0.9.3');
 
-  api.use(['ejson', 'underscore'], ['server', 'client']);
+  api.use(['underscore'], ['server', 'client']);
 
   api.addFiles([
     'lib/namespace.js',
